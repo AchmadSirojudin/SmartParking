@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private ImageView kb, is, r;
+    private ImageView kodeBarcode, isiSaldo, riwayat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,33 +19,31 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         // Menginisialisasi ID untuk Button
-        kb = findViewById(R.id.btnBarcode);
-        is = findViewById(R.id.btnIsiSaldo);
-        r = findViewById(R.id.btnRiwayat);
+        kodeBarcode = findViewById(R.id.btnBarcode);
+        isiSaldo = findViewById(R.id.btnIsiSaldo);
+        riwayat = findViewById(R.id.btnRiwayat);
 
         // Memberikan Listener pada Button
-        /*
-        kb.setOnClickListener(new View.OnClickListener() {
+        kodeBarcode.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent ii = new Intent(HomeActivity.this, BarcodeActivity.class);
                 startActivity(ii);
             }
         });
 
-        is.setOnClickListener(new View.OnClickListener() {
+        isiSaldo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v2) {
                 Intent i = new Intent(HomeActivity.this, IsiSaldoActivity.class);
                 startActivity(i);
             }
         });
 
-        r.setOnClickListener(new View.OnClickListener() {
+        riwayat.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v3) {
                 Intent i = new Intent(HomeActivity.this, RiwayatActivity.class);
                 startActivity(i);
             }
         });
-        */
 
     }
 
