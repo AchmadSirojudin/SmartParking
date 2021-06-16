@@ -1,58 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".RiwayatActivity">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="71dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_history"
-        tools:ignore="VectorDrawableCompat" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="246dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Riwayat"
-        android:textColor="@color/black"
-        android:textSize="42sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="71dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_history"
+            tools:ignore="VectorDrawableCompat" />
 
-<!--    <Button-->
-<!--        android:id="@+id/btnKembaliR"-->
-<!--        android:layout_width="339dp"-->
-<!--        android:layout_height="52dp"-->
-<!--        android:background="#041CBA"-->
-<!--        android:text="KEMBALI"-->
-<!--        android:textColor="@color/cardview_light_background"-->
-<!--        android:textSize="20sp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.476"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.979" />-->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="246dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Riwayat"
+            android:textColor="@color/black"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="344dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="104dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="100dp"
         android:background="#555559"
         android:paddingLeft="5dp"
         android:text="Mei 2021"
@@ -66,9 +61,10 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="344dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="288dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:background="#555559"
         android:paddingLeft="5dp"
         android:text="Juni 2021"
@@ -79,4 +75,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

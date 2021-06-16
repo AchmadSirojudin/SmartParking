@@ -15,16 +15,16 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-//        TextView reg = (TextView) findViewById(R.id.txtReg);
+        TextView reg = (TextView) findViewById(R.id.txtReg);
         Button masuk = (Button) findViewById(R.id.btnMasukHome);
 
-//        // tombol daftar
-//        reg.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent i = new Intent(LoginActivity.this, DaftarActivity.class);
-//                startActivity(i);
-//            }
-//        }); // Memberikan Listener pada Button
+        // tombol daftar
+        reg.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(LoginActivity.this, DaftarActivity.class);
+                startActivity(i);
+            }
+        }); // Memberikan Listener pada Button
 
         masuk.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v2) {
