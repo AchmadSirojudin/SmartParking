@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".LupaPwdActivity"></activity>
+        <activity android:name=".PinActivity" />
+        <activity android:name=".KameraActivity" />
         <activity android:name=".KetikaParkirMainActivity" />
         <activity android:name=".RiwayatActivity" />
         <activity android:name=".IsiSaldoActivity" />

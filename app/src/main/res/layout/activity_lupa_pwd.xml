@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LupaPwdActivity">
+
+    <ImageView
+        android:layout_width="266dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="72dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Nomor Telepon"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Password akan dikirimkan melalui SMS ke nomor telepon anda."/>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="#041CBA"
+        android:text="KIRIM"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"/>
+
+</LinearLayout>

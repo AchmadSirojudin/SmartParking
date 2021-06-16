@@ -10,7 +10,8 @@ import android.widget.TextView;
 
 public class DaftarActivity extends AppCompatActivity {
 
-    private TextView reg; // memvuat variabel
+    private TextView reg;
+    private Button daftar;// memvuat variabel
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class DaftarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_daftar);
 
         reg = findViewById(R.id.txtLog);
+        daftar = findViewById(R.id.btnReg);
 
         // tombol masuk
         reg.setOnClickListener(new View.OnClickListener() {
@@ -26,5 +28,12 @@ public class DaftarActivity extends AppCompatActivity {
                 startActivity(i);
             }
         }); // Memberikan Listener pada Button
+
+        daftar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(DaftarActivity.this, PinActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
