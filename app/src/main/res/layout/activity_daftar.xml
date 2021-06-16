@@ -301,8 +301,10 @@
 
         <Button
             android:id="@+id/btnReg"
-            android:layout_width="301dp"
+            android:layout_width="match_parent"
             android:layout_height="52dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="25dp"
             android:background="#041CBA"
             android:text="Daftar"
